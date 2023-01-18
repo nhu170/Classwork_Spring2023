@@ -15,9 +15,12 @@ The database will contain:
 	- A+
  	- A-
  	- B+
+ 	- B-
+ 	- AB+
+ 	- AB-
  		* more
 
- ## FUture additions
+ ## Future additions
  1. Patient Address
  2. Medical Record Number
  3. Patient Gender
