@@ -7,3 +7,6 @@
  5. Rabbits
 
  Dogs are my favorite because my family has been keeping a dog for almost ten years. He basically grew up with me.
+
+## Animals that I do not like
+insects
