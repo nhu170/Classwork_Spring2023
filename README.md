@@ -9,10 +9,12 @@ This is written in Python.
 
 ## Specifications
 The database will contain:
-* Patient Name
-* Patient Medical Record Number
-* Patient Age
-* Patient Test Result
+* Patient Name, string
+* Patient Medical Record Number, integer
+* Patient Age, integer
+* Patient Test Result, list of lists
+	- Each test is represented by [test_name, test_value]
+	where test_name if a string and test_value is an integer/float
 
 
 * Patient Bloodtype
