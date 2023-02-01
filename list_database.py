@@ -12,11 +12,10 @@ def main_driver():
     print(db)
     add_test_to_patient(db, 1, "HDL", 120)
     add_test_to_patient(db, 2, "HDL", 99)
-    add_test_to_patient(db, 2, "LDL", 100)
     room_numbers = ["103","202","333"]
     print(db)
     print_directory(db, room_numbers)
-    get_test_value(db, 2, "HDL")
+    print(get_test_value(db, 1, "HDL"))
 
     #print("Get patient Ann")
     #mrn_to_find = 1
@@ -37,7 +36,8 @@ def get_test_value_from_test_list(test_list, test_name):
 
 def get_test_value(db, mrn, test_name):
     patient = get_patient_entry(db, mrn)
-    test_value = get_test_value_from_test_list(patient, test_name)
+    test_list = patient[3]
+    test_value = get_test_value_from_test_list(test_list, test_name)
     return test_value
 
 
