@@ -18,10 +18,12 @@ def interface():
             chol_driver()
     print("Program ending")
 
+
 def HDL_driver():
     HDL_in = HDL_input()
     HDL_analy = HDL_analysis(HDL_in)
     HDL_output(HDL_in, HDL_analy)
+
 
 def HDL_input():
     HDL_value = input("Enter the HDL resultrs:")
@@ -57,7 +59,7 @@ def LDL_analysis(LDL_int):
     elif 130 <= LDL_int < 160:
         answer = "Borderline High"
     elif 160 <= LDL_int < 190:
-        answer = " High"
+        answer = "High"
     else:
         answer = "Very High"
     return answer
@@ -91,5 +93,5 @@ def chol_output(chol_value, chol_analy):
     return
 
 
-
-interface()
+if __name__ == "__main__":
+    interface()
