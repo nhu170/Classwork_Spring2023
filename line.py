@@ -24,6 +24,7 @@ def point_two_input():
     point = (x, y)
     return point
 
+
 def x_input():
     x = input("Enter desired x value:")
     x = float(x)
