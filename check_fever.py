@@ -7,9 +7,9 @@ def test_check_fever():
     expected = True
     assert answer == expected
 
+
 def check_fever(input_list):
     for temperature in input_list:
         if temperature > 100.5:
             return True
     return False
-

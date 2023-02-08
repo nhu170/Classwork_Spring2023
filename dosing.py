@@ -5,6 +5,7 @@
              type of medical treatment or diagnostics.
 """
 
+
 def diagnosis_input():
     print("Day One Dosing Guidelines")
     print("")
@@ -15,8 +16,10 @@ def diagnosis_input():
     print("4 - Pharyngitis/tonsilitis")
     diagnosis = int(input("Enter a number: "))
     return diagnosis
-  
+
 # Can separate this into weight_input and weight_parse to process data
+
+
 def weight_input():
     print("PATIENT WEIGHT")
     print("Enter patient weight followed by units of kg or lb.")
@@ -29,11 +32,13 @@ def weight_input():
         weight = weight / 2.205
     return weight
 
+
 def dose_analysis(diagnosis, weight):
     dosages_mg_per_kg = [30, 10, 10, 12]
     dosage_mg_per_kg = dosages_mg_per_kg[diagnosis-1]
     dosage_analy = weight * dosage_mg_per_kg
     return dosage_analy
+
 
 def dose_output(weight, dosage_analy):
     print("CORRECT DOSAGE")
@@ -42,12 +47,13 @@ def dose_output(weight, dosage_analy):
           .format(dosage_analy))
 
 # Driver
+
+
 if __name__ == '__main__':
-    dia_in = diagnosis_input() 
+    dia_in = diagnosis_input()
     wei_in = weight_input()
     dose_analy = dose_analysis(dia_in, wei_in)
     dose_output(wei_in, dose_analy)
-
 
 
 def dose_amount():
@@ -79,4 +85,3 @@ def dose_amount():
 
 if __name__ == '__main__':
     dose_amount()
-

@@ -1,7 +1,8 @@
+import blood_calculator as bc
+
 print("This is the database.py file")
 print("Python thinks this is called {}".format(__name__))
 
-import blood_calculator as bc
 # Will automatically run what's being imported
 # Imported the whole module (every function included)
 # Can call other functions by: bc.function_name("Other Test")
@@ -14,7 +15,8 @@ import blood_calculator as bc
 # (Don't use this) Another method:
 # from blood_calculator import *
 # All functions will be imported, no need to specify
-# Considered bad pratice b/c not readable/tracable, cannot know which function comes from where
+# Considered bad pratice b/c not readable/tracable,
+# cannot know which function comes from where
 
 
 HDL = 55
