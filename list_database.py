@@ -10,7 +10,6 @@ def main_driver():
     db.append(create_patient_entry("Bob Boyles", 2, 45))
     db.append(create_patient_entry("Chris Chou", 3, 52))
     print(db)
-    return
     add_test_to_patient(db, 1, "HDL", 120)
     add_test_to_patient(db, 2, "HDL", 99)
     room_numbers = ["103","202","333"]
