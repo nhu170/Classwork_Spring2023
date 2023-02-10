@@ -2,8 +2,8 @@
 
 def create_patient_entry(first_name, last_name, patient_mrn, patient_age):
     new_patient = {"First name": first_name, "Last name": last_name,
-                    "MRN": patient_mrn, "Age": patient_age,
-                    "Tests": []}
+                   "MRN": patient_mrn, "Age": patient_age,
+                   "Tests": []}
     return new_patient
 
 
@@ -25,11 +25,12 @@ def main_driver():
     # print("Get patient Ann")
     # mrn_to_find = 1
     # found_patient = get_patient_entry(db, mrn_to_find)
-    # Only use "is" to compare Boolean, use == to compare other types of variables
+    # Only use "is" to compare Boolean,
+    # use == to compare other types of variables
     # if found_patient is False:
-        # print("Patient mrn {} not found".format(mrn_to_find))
+    # print("Patient mrn {} not found".format(mrn_to_find))
     # else:
-        # print(found_patient)
+    # print(found_patient)
     # printing Bob's age
     # print(db[1][2])
 
@@ -52,10 +53,11 @@ def get_test_value_from_test_list(test_list, test_name):
             return test[1]
     return False
 
+
 def print_directory(db, room_numbers):
     for i, patient in enumerate(db):
         print("Patient {} is in room {}".format(patient[0], room_numbers[i]))
-    #Another way is to zip (2 lists need to be the same size):
+    # Another way is to zip (2 lists need to be the same size):
     for patient, rn in zip(db, room_numbers):
         print("Patient {} is in room {}".format(patient[0], rn))
 
