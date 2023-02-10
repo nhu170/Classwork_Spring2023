@@ -1,22 +1,20 @@
 class Patient:
 
     def __init__(self, patient_first_name,
-                    patient_last_name,
-                    patient_mrn,
-                    patient_age):
+                 patient_last_name,
+                 patient_mrn,
+                 patient_age):
         self.first_name = patient_first_name
         self.last_name = patient_last_name
         self.mrn = patient_mrn
         self.age = patient_age
         self.tests = []
-    
-    
+
     def get_full_name(self):
         full_name = "{} {}".format(self.first_name,
-                                    self.last_name)
+                                   self.last_name)
         print(self.age)
         return full_name
-    
 
     def is_adult(self):
         if self.age >= 18:
