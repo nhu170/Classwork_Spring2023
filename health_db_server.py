@@ -4,6 +4,7 @@ db = {}
 
 app = Flask(__name__)
 
+
 def add_patient_to_db(id, name, blood_type):
     new_patient = {"id": id,
                    "name": name,
@@ -66,7 +67,7 @@ def does_patient_exist_in_db(id):
         return True
     else:
         return False
-    
+
 
 def new_test_driver(in_data):
     # Validate input
